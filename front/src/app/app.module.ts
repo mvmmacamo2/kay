@@ -8,7 +8,7 @@ import {PaginaInicialComponent} from './pagina-inicial/pagina-inicial.component'
 import {UsuariosComponent} from './admin/usuarios/usuarios.component';
 import {MenuComponent} from './pagina-inicial/menu/menu.component';
 import {FormsModule} from "@angular/forms";
-import {HttpClient} from "@angular/common/http";
+
 
 import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
@@ -25,7 +25,6 @@ import {MDBBootstrapModule} from 'angular-bootstrap-md';
     imports: [
         BrowserModule,
         FormsModule,
-        HttpClient,
         MDBBootstrapModule.forRoot()
 
     ],
