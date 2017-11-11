@@ -1,25 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
-
-import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
 import { MenuAdminComponent } from './admin/menu-admin/menu-admin.component';
-import { Observable } from 'rxjs/Rx';
+import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
+import { UsuariosComponent } from './admin/usuarios/usuarios.component';
+import { MenuComponent } from './pagina-inicial/menu/menu.component';
 
 @NgModule({
-declarations: [
-AppComponent,
-AdminComponent,
-MenuAdminComponent
-],
-imports: [
-BrowserModule,
-MDBBootstrapModule.forRoot()
-],
-schemas: [ NO_ERRORS_SCHEMA ],
-providers: [],
-bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    AdminComponent,
+    MenuAdminComponent,
+    PaginaInicialComponent,
+    UsuariosComponent,
+    MenuComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
