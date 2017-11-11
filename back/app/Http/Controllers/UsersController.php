@@ -85,17 +85,47 @@ class UsersController extends Controller
 
 
     // FUNCOES DE API
+
+    // Buscar Todos os Usuarios
     public function getUsuarios()
     {
         $usuarios = User::all();
         if (!$usuarios) {
             return response()->json(['mensagem'=>'Nenhum usuario Disponivel'], 404);
         }else{
-            
+
         }
-        return response()->json(['usuarios' => $usuarios], 200);
+        return response()->json(['usuarios' => $usuarios, 'status'=> 200]);
 
     }
+
+
+
+// buscar Usuario
+
+    public function getUsuario($id){
+
+        $usuario = User::find($id);
+        if(!$usuario)
+            return response()->json(['mensagem' => 'Usuario não encontrado'], 404);
+        else
+            return response()->json(['usuario' => $usuario]);
+    }
+
+
+  // MANDAR USUARIO
+    public function salvarUsuario(Request $request){
+//        $trabalho = new Trabalho();
+//        $trabalho->titulo = $request->input('titulo');
+//        $trabalho->resumo = $request->input('resumo');
+//        $trabalho->referencias = $request->input('referencias');
+//        $trabalho->save();
+
+        $usuario = User::create($request->all());
+
+        return response()->json(['usuario' => $usuario], 201);
+    }
+
 
 
 }
