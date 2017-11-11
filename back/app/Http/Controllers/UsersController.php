@@ -114,19 +114,40 @@ class UsersController extends Controller
 
 
   // MANDAR USUARIO
-    public function salvarUsuario(Request $request){
-//        $trabalho = new Trabalho();
-//        $trabalho->titulo = $request->input('titulo');
-//        $trabalho->resumo = $request->input('resumo');
-//        $trabalho->referencias = $request->input('referencias');
-//        $trabalho->save();
+    public function salvarUsuario(Request $request)
+    {
 
         $usuario = User::create($request->all());
 
         return response()->json(['usuario' => $usuario], 201);
     }
 
-    
+
+
+
+    public function updateUsuario(Request $request, $id)
+    {
+
+        $usuario = User::find($id);
+        if(!$usuario)
+            return response()->json(['mensagem' => 'Usuário nao  encontrado'], 404);
+
+        $usuario->update($request->all());
+
+        return response(['trabalho', $usuario]);
+    }
+
+
+
+    public function deleteUsuario($id){
+        $usuario = User::find($id);
+        if(!$usuario)
+            return response()->json(['mensagem' => 'Usuário não  encontrado'], 404);
+        $usuario->delete();
+        return response()->json(['mensagem', 'User Removido  com sucesso'], 200);
+    }
+
+
 
 
 }
