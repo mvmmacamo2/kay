@@ -126,6 +126,7 @@ class UsersController extends Controller
         return response()->json(['usuario' => $usuario], 201);
     }
 
+    
 
 
 }
