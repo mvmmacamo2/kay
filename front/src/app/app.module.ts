@@ -9,18 +9,19 @@ import { UsuariosComponent } from './admin/usuarios/usuarios.component';
 import { MenuComponent } from './pagina-inicial/menu/menu.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AdminComponent,
-    MenuAdminComponent,
-    PaginaInicialComponent,
-    UsuariosComponent,
-    MenuComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+declarations: [
+AppComponent,
+AdminComponent,
+MenuAdminComponent,
+PaginaInicialComponent,
+UsuariosComponent,
+MenuComponent
+],
+imports: [
+BrowserModule
+
+],
+providers: [],
+bootstrap: [AppComponent]
 })
 export class AppModule { }
