@@ -6,6 +6,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
 import { MenuAdminComponent } from './admin/menu-admin/menu-admin.component';
+import 'rxjs/Rx';
 
 @NgModule({
 declarations: [
