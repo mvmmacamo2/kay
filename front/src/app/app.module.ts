@@ -12,6 +12,7 @@ import {FormsModule} from "@angular/forms";
 
 import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
+import { FooterComponent } from './pagina-inicial/footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -20,7 +21,8 @@ import {MDBBootstrapModule} from 'angular-bootstrap-md';
         MenuAdminComponent,
         PaginaInicialComponent,
         UsuariosComponent,
-        MenuComponent
+        MenuComponent,
+        FooterComponent
     ],
     imports: [
         BrowserModule,
