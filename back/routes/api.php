@@ -18,4 +18,8 @@ use Illuminate\Http\Request;
 //});
 
 
-//Route::get('usuaros', ['uses'=>'']);
+Route::get('usuarios', ['uses'=>'UsersController@getUsuarios']);
+Route::get('usuario/{id}', ['uses'=>'UsersController@getUsuario']);
+Route::post('usuario', ['uses'=>'UsersController@salvarUsuario']);
+Route::put('usuario/{id}', ['uses'=>'UsersController@updateUsuario']);
+Route::delete('usuario/{id}', ['uses'=>'UsersController@deleteUsuario']);
