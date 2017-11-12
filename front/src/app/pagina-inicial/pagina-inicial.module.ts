@@ -6,19 +6,30 @@ import {PostsComponent} from "./posts/posts.component";
 import {PaginaInicialComponent} from "./pagina-inicial.component";
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
+import {RouterModule} from "@angular/router";
+import {NO_ERRORS_SCHEMA} from '@angular/core';
+import {MDBBootstrapModule} from 'angular-bootstrap-md';
+
 
 @NgModule({
     imports: [
         CommonModule,
-        FormsModule
+        FormsModule,
+        MDBBootstrapModule.forRoot(),
+
+        RouterModule
     ],
-    exports: [],
+    schemas: [NO_ERRORS_SCHEMA],
+    exports: [
+        RouterModule
+    ],
     declarations: [
         LoginComponent,
         FooterComponent,
         MenuComponent,
         PostsComponent,
-        PaginaInicialComponent
+        PaginaInicialComponent,
+
 
 
     ],

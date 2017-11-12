@@ -18,6 +18,7 @@ import {FootergeralComponent} from './footergeral/footergeral.component';
 // import {LoginComponent} from './pagina-inicial/login/login.component';
 // import {PostsComponent} from "./pagina-inicial/posts/posts.component";
 import {AppRoutingModule} from "./app.routing.module";
+import {PaginaInicialModule} from "./pagina-inicial/pagina-inicial.module";
 
 
 @NgModule({
@@ -36,8 +37,8 @@ import {AppRoutingModule} from "./app.routing.module";
     imports: [
         BrowserModule,
         FormsModule,
-
         MDBBootstrapModule.forRoot(),
+        PaginaInicialModule,
         AppRoutingModule
 
     ],
