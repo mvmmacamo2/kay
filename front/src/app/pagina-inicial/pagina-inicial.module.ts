@@ -6,9 +6,10 @@ import {PostsComponent} from "./posts/posts.component";
 import {PaginaInicialComponent} from "./pagina-inicial.component";
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
-import {RouterModule} from "@angular/router";
+// import {RouterModule} from "@angular/router";
 import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
+import {PaginaInicialRoutingModule} from "./pagina-inicial.routing.module";
 
 
 @NgModule({
@@ -16,12 +17,13 @@ import {MDBBootstrapModule} from 'angular-bootstrap-md';
         CommonModule,
         FormsModule,
         MDBBootstrapModule.forRoot(),
+        PaginaInicialRoutingModule,
 
-        RouterModule
+        // RouterModule
     ],
     schemas: [NO_ERRORS_SCHEMA],
     exports: [
-        RouterModule
+
     ],
     declarations: [
         LoginComponent,
