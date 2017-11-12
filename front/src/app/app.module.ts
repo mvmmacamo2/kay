@@ -19,6 +19,7 @@ import {FootergeralComponent} from './footergeral/footergeral.component';
 // import {PostsComponent} from "./pagina-inicial/posts/posts.component";
 import {AppRoutingModule} from "./app.routing.module";
 import {PaginaInicialModule} from "./pagina-inicial/pagina-inicial.module";
+import {UsuariosModule} from "./admin/usuarios/usuarios.module";
 
 
 @NgModule({
@@ -39,7 +40,7 @@ import {PaginaInicialModule} from "./pagina-inicial/pagina-inicial.module";
         FormsModule,
         MDBBootstrapModule.forRoot(),
         PaginaInicialModule,
-        AppRoutingModule
+        UsuariosModule
 
     ],
     schemas: [NO_ERRORS_SCHEMA],
