@@ -4,19 +4,19 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {AdminComponent} from './admin/admin.component';
 import {MenuAdminComponent} from './admin/menu-admin/menu-admin.component';
-import {PaginaInicialComponent} from './pagina-inicial/pagina-inicial.component';
+// import {PaginaInicialComponent} from './pagina-inicial/pagina-inicial.component';
 import {UsuariosComponent} from './admin/usuarios/usuarios.component';
-import {MenuComponent} from './pagina-inicial/menu/menu.component';
+// import {MenuComponent} from './pagina-inicial/menu/menu.component';
 import {FormsModule} from "@angular/forms";
 
 
 import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
-import {FooterComponent} from './pagina-inicial/footer/footer.component';
+// import {FooterComponent} from './pagina-inicial/footer/footer.component';
 import {FootergeralComponent} from './footergeral/footergeral.component';
 // import {routing} from "./app.routing";
-import {LoginComponent} from './pagina-inicial/login/login.component';
-import {PostsComponent} from "./pagina-inicial/posts/posts.component";
+// import {LoginComponent} from './pagina-inicial/login/login.component';
+// import {PostsComponent} from "./pagina-inicial/posts/posts.component";
 import {AppRoutingModule} from "./app.routing.module";
 
 
@@ -25,13 +25,13 @@ import {AppRoutingModule} from "./app.routing.module";
         AppComponent,
         AdminComponent,
         MenuAdminComponent,
-        PaginaInicialComponent,
+        // PaginaInicialComponent,
         UsuariosComponent,
-        MenuComponent,
-        FooterComponent,
+        // MenuComponent,
+        // FooterComponent,
         FootergeralComponent,
-        LoginComponent,
-        PostsComponent
+        // LoginComponent,
+        // PostsComponent
     ],
     imports: [
         BrowserModule,
