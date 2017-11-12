@@ -15,7 +15,7 @@
                 <a class="nav-link waves-light" mdbRippleRadius>Procura</a>
             </li>
             <li class="nav-item">
-                <a  class="nav-link waves-light" mdbRippleRadius>Admin</a>
+                <a [routerLink]="['/admin']" class="nav-link waves-light" mdbRippleRadius>Admin</a>
             </li>
 
 
@@ -28,8 +28,8 @@
             <!-- Dropdown -->
             <li class="nav-item dropdown" dropdown>
                 <a dropdownToggle mdbRippleRadius type="button" class="nav-link dropdown-toggle waves-light"
-                   mdbRippleRadius>
-                    <i class="fa fa-user"></i> User Data<span class="caret"></span></a>
+                mdbRippleRadius>
+                <i class="fa fa-user"></i> User Data<span class="caret"></span></a>
                 <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
                     <a class="dropdown-item waves-light" mdbRippleRadius href="#">Perfil</a>
                     <a class="dropdown-item waves-light" mdbRippleRadius href="#">Sair</a>
