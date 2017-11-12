@@ -11,7 +11,6 @@ const paginainicialRoutes: Routes = [
 ];
 
 
-
 @NgModule({
     imports: [
         RouterModule.forChild(paginainicialRoutes)
