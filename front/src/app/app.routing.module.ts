@@ -6,7 +6,10 @@ import {PaginaInicialComponent} from "./pagina-inicial/pagina-inicial.component"
 import {LoginComponent} from "./pagina-inicial/login/login.component";
 import {PostsComponent} from "./pagina-inicial/posts/posts.component";
 
-const APP_ROUTES: Routes = [
+import {NgModule} from "@angular/core";
+
+
+const appRoutes: Routes = [
     {path: 'admin/usuarios', component: UsuariosComponent},
     {path: 'admin', component: AdminComponent},
     {path: '', component: PaginaInicialComponent},
@@ -15,4 +18,14 @@ const APP_ROUTES: Routes = [
 
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);
+
+
+@NgModule({
+    imports: [
+        RouterModule.forRoot(appRoutes)
+    ],
+    exports:[RouterModule]
+})
+
+export class AppRoutingModule {
+}

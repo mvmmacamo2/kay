@@ -8,11 +8,12 @@
 
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link waves-light" mdbRippleRadius>Home<span class="sr-only">(current)</span></a>
+            <li routerLinkActive="active" class="nav-item ">
+                <a  routerLink="/" class="nav-link waves-light" mdbRippleRadius>Home<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link waves-light" mdbRippleRadius>Procura</a>
+
+            <li routerLinkActive="active" class="nav-item">
+                <a   [routerLink]="['/posts']" class="nav-link waves-light" mdbRippleRadius>Procura</a>
             </li>
             <li class="nav-item">
                 <a [routerLink]="['/admin']" class="nav-link waves-light" mdbRippleRadius>Admin</a>
@@ -31,9 +32,10 @@
                 mdbRippleRadius>
                 <i class="fa fa-user"></i> User Data<span class="caret"></span></a>
                 <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbRippleRadius routerLink="login">Login</a>
                     <a class="dropdown-item waves-light" mdbRippleRadius href="#">Perfil</a>
                     <a class="dropdown-item waves-light" mdbRippleRadius href="#">Sair</a>
-                    <!--<a class="dropdown-item waves-light" mdbRippleRadius href="#">Something else here</a>-->
+
                     <!--<div class="divider dropdown-divider"></div>-->
                     <!--<a class="dropdown-item waves-light" mdbRippleRadius href="#">Separated link</a>-->
                 </div>

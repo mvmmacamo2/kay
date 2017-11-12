@@ -12,9 +12,12 @@ import {FormsModule} from "@angular/forms";
 
 import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
-import { FooterComponent } from './pagina-inicial/footer/footer.component';
-import { FootergeralComponent } from './footergeral/footergeral.component';
-import {routing} from "./app.routing";
+import {FooterComponent} from './pagina-inicial/footer/footer.component';
+import {FootergeralComponent} from './footergeral/footergeral.component';
+// import {routing} from "./app.routing";
+import {LoginComponent} from './pagina-inicial/login/login.component';
+import {PostsComponent} from "./pagina-inicial/posts/posts.component";
+import {AppRoutingModule} from "./app.routing.module";
 
 
 @NgModule({
@@ -26,17 +29,19 @@ import {routing} from "./app.routing";
         UsuariosComponent,
         MenuComponent,
         FooterComponent,
-        FootergeralComponent
+        FootergeralComponent,
+        LoginComponent,
+        PostsComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
 
         MDBBootstrapModule.forRoot(),
-        routing
+        AppRoutingModule
 
     ],
-    schemas: [ NO_ERRORS_SCHEMA ],
+    schemas: [NO_ERRORS_SCHEMA],
     providers: [],
     bootstrap: [AppComponent]
 })
