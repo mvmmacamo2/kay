@@ -6,9 +6,9 @@ import {ModuleWithProviders} from "@angular/core";
 import {PaginaInicialComponent} from "./pagina-inicial/pagina-inicial.component";
 
 const APP_ROUTES: Routes =[
-    {path: 'admin/usuarios', component: UsuariosComponent},
-    {path:'admin', component:AdminComponent},
-    {path:'/', component:PaginaInicialComponent }
+{path: 'admin/usuarios', component: UsuariosComponent},
+{path:'admin', component:AdminComponent},
+{path:'', component:PaginaInicialComponent }
 
 ];
 
