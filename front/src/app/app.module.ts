@@ -14,6 +14,8 @@ import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
 import { FooterComponent } from './pagina-inicial/footer/footer.component';
 import { FootergeralComponent } from './footergeral/footergeral.component';
+import {routing} from "./app.routing";
+
 
 @NgModule({
     declarations: [
@@ -29,7 +31,9 @@ import { FootergeralComponent } from './footergeral/footergeral.component';
     imports: [
         BrowserModule,
         FormsModule,
-        MDBBootstrapModule.forRoot()
+
+        MDBBootstrapModule.forRoot(),
+        routing
 
     ],
     schemas: [ NO_ERRORS_SCHEMA ],
